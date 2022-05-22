@@ -97,7 +97,7 @@ Enter invalid email
     Input Text      ${email_login}       ${user_email}
 Enter valid password
     Input Text      ${password_login}       ${password}
-Submit login data
+Submit login data 2
     Click Button   ${submit_login_button}
     Close Browser
 Open shop main page 3
