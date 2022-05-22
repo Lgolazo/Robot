@@ -8,7 +8,7 @@ ${shopurl}  http://automationpractice.com/index.php
 #main locators
 ${sign_in_button}  class:login
 #login page locators
-${email_field}  id:email_create
+${new_email_field}  id:email_create
 ${submit_login}  id:SubmitLogin
 ${email_login}      id:email
 ${password_login_field}       id:passwd
