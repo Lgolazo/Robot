@@ -12,8 +12,7 @@ Enter a new email address
     Input Text      ${email_field}      ${user_email}
 Click Create an account button
     Click Element   ${create_account_button}
-Close browser
-    Close browser
+
 
 
 

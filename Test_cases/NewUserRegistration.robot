@@ -1,7 +1,7 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ../Resources/LoginPage.robot
+Resource    ..\Resources\LoginPageNewUser.robot
 *** Test Cases ***
 Test Registration
     [Tags]    New user registration
