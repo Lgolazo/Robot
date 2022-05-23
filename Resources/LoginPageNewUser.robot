@@ -1,8 +1,8 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ../Page objects/Locators.robot
-Resource    ../Page objects/Variables.robot
+Resource    ../Page_objects/Locators.robot
+Resource    ../Page_objects/Variables.robot
 *** Keywords ***
 Open shop main page
     Open Browser    ${shopurl}     ${browser}
@@ -10,11 +10,9 @@ Open shop main page
 Sign in page
     Click Element    ${sing_in_button}
 Enter a new email address
-    Input Text      ${new_email_field}      ${user_email}
-Click Create an account button
-    Click Element   ${create_account_button}
-Close browser
-    Close browser
+    Input Text      ${new_email_field}      ${new_user_email}
+    Click Element   ${submit_create_button}
+
 
 
 

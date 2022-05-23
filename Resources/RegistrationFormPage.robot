@@ -1,8 +1,8 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ../Page objects/Locators.robot
-Resource    ../Page objects/Variables.robot
+Resource    ../Page_objects/Locators.robot
+Resource    ../Page_objects/Variables.robot
 *** Keywords ***
 Enter your personal information
     Wait Until Element Is Visible   ${mr_button}
@@ -20,8 +20,8 @@ Enter address information
     Input Text      ${postcode_field}       ${postcode}
 Enter mobile phone
     Input Text      ${mobile_field}     ${mobile}
+Email address validation
+    Element Should Contain  ${email_form_field}      ${new_user_email}
 Submit registration form
-    #Click Element      ${submit_button}
-    #Wait Until Element Is Visible     class:alert alert-danger
-    sleep   10
-    Close Browser
+    Click Element      ${submit_button}
+    sleep   5s

@@ -1,16 +1,18 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ../Page objects/Locators.robot
-Resource    ../Page objects/Variables.robot
+Resource    ../Page_objects/Locators.robot
+Resource    ../Page_objects/Variables.robot
 *** Keywords ***
 Enter user email address
-    Input Text      ${email_field}      ${user_email}
+    Input Text     ${email_login}       ${login}
 Enter invalid user email address
-    Input Text      ${email_field}      ${invalid_user_email}
+    Input Text      ${email_login}       ${invalid_user_email}
 Enter user password
-    Input Text      ${password_login}       ${password}
+    Input Text      ${password_login_field}       ${password}
 Enter user invalid password
-    Input Text      ${password_login}       ${short_password}
-Click Create an account button
-    Click Element   ${submit_login_button_field}
+    Input Text      ${password_login_field}       ${short_password}
+Click submit account button
+    Click Element  ${submit_login_button}
+Error messages validation
+    Page Should Contain Element      ${error_msg_field}

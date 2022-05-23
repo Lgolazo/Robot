@@ -1,11 +1,11 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ..\Resources\LoginPageNewUser.robot
-Resource    ..\Resources\RegistrationFormPage.robot
+Resource    ../Resources/LoginPageNewUser.robot
+Resource    ../Resources/RegistrationFormPage.robot
+Test Teardown   Close all browsers
 *** Test Cases ***
 Registration new user
-    [Tags]    New user registration
     Open shop main page
     Signin page
     Enter a new email address

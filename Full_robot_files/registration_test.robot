@@ -1,7 +1,8 @@
 *** Settings ***
-Documentation    Suite description
+Documentation
 Library    SeleniumLibrary
 Library    BuiltIn
+Test Teardown   Close all browsers
 *** Variables ***
 ${shopurl}    http://automationpractice.com/index.php
 ${browser}         Chrome
@@ -84,8 +85,9 @@ Enter address information
 Enter mobile phone
     Input Text      ${mobile_field}     ${mobile}
 Submit registration form
-    #Click Element      ${submit_button}
-    #Wait Until Element Is Visible     class:alert alert-danger
+    Click Element      ${submit_button}
+    #Wait Until Element Is Visible     id:center_column     timeout=60s
+    Element Should Be Visible   id:center_column
     sleep   10
     Close Browser
 Open shop main page 2

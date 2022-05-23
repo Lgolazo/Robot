@@ -9,14 +9,14 @@ ${shopurl}  http://automationpractice.com/index.php
 ${sign_in_button}  class:login
 #login page locators
 ${new_email_field}  id:email_create
-${submit_login}  id:SubmitLogin
+${submit_create_button}  id:SubmitCreate
 ${email_login}      id:email
 ${password_login_field}       id:passwd
-${submit_login_button_field}      id:SubmitLogin
+${submit_login_button}      id:SubmitLogin
+${error_msg_field}          //body[@id='authentication']/div[@id='page']/div[@class='columns-container']/div[@id='columns']/div[@class='row']/div[@id='center_column']/div[1]
 #registration page locators
 ${sing_in_button}  class:login
-${email_field}      id:email_create
-${create_account_button}    id:SubmitCreate
+${email_form_field}      id:email
 ${mr_button}    id:id_gender1
 ${addres_field}     id:address1
 ${city_field}       id:city
