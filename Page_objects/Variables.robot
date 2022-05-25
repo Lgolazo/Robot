@@ -15,10 +15,10 @@ ${first_name}   WSB
 ${last_name}    Student
 ${short_password}       test
 ${password}         wsbstudent
-${addres}       586 Turnpike Rd New
-${city}     New Ipswich
-${state}    29
-${postcode}     03071
+${addres}       Fabryczna 12
+${city}     Wrocław
+${state}    1
+${postcode}     55200
 ${mobile}      555123456
 ${bday_days}       10
 ${bday_month}     5
